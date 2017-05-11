@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?><addons>
+<addon id="plugin.program.pythonzipdownloader" name="PYTHON ZIP DOWNLOADER" version="1.0.2" 
+provider-name="VinMan JSV">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Python Zip Downloader</summary>
+		<description lang="en">Download zip files from serveral sources. Use the URL you would type into a browser to download zip file automatically (?raw=true). </description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		
+		<source></source>
+		<email>vinman_sv@hotmail.com</email>
+	</extension>
+</addon>
+
+<addon id="plugin.video.watiporn" name="watiporn" version="1.0.0" provider-name="christ">
+
+	<requires>
+ <import addon="xbmc.python" version="2.24.0"/>
+	<import addon="script.common.plugin.cache" version="0.9.1"/>
+	<import addon="script.module.parsedom" version="0.9.1"/>
+
+	<import addon="script.module.urlresolver" optional="true"/>
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="startup.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>fr</language>
+    <summary lang="fr">Watiporn</summary>
+    <description lang="fr">Véritable tube porno maison. Regarder des tonnes de vidéos soumises par les utilisateurs et des photos mettant en vedette les plus belles fucking amateur et sucer autour. Si vous voulez regarder MILF aller à elle, une paire d'adolescents amateurs du collège se rendre à l'entreprise ou des filles asiatiques solo jouant avec eux-mêmes. Partagez et regardez la pornographie à la maison, beaucoup d'amusement :)</description>
+    <source>http://api.watiporn.com/xmbc/api/plugin.video.watiporn/</source>
+    <website>http://www.watiporn.com</website>
+
+	</extension>
+</addon>
+
+<addon id="plugin.video.watiporn" name="watiporn" version="1.0.0" provider-name="christ">
+
+	<requires>
+ <import addon="xbmc.python" version="2.24.0"/>
+	<import addon="script.common.plugin.cache" version="0.9.1"/>
+	<import addon="script.module.parsedom" version="0.9.1"/>
+
+	<import addon="script.module.urlresolver" optional="true"/>
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="startup.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>fr</language>
+    <summary lang="fr">Watiporn</summary>
+    <description lang="fr">Véritable tube porno maison. Regarder des tonnes de vidéos soumises par les utilisateurs et des photos mettant en vedette les plus belles fucking amateur et sucer autour. Si vous voulez regarder MILF aller à elle, une paire d'adolescents amateurs du collège se rendre à l'entreprise ou des filles asiatiques solo jouant avec eux-mêmes. Partagez et regardez la pornographie à la maison, beaucoup d'amusement :)</description>
+    <source>http://api.watiporn.com/xmbc/api/plugin.video.watiporn/</source>
+    <website>http://www.watiporn.com</website>
+
+	</extension>
+</addon>
+
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.8">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Common caching api for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module" />
+</addon>
+
+<addon id="script.module.parsedom" name="Parsedom for xbmc plugins" provider-name="TheCollective" version="2.5.2">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Parsedom for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+        <license>GPLv3</license>
+        <platform>all</platform>
+        <email></email>
+        <website></website>
+        <forum>http://forum.xbmc.org/showthread.php?tid=116498</forum>
+        <source>https://github.com/HenrikDK/xbmc-common-plugin-functions</source>
+        <language></language>
+   </extension>
+</addon>
+<addon id="script.module.urlresolver" 
+     name="URLResolver" 
+     version="2.10.0" 
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>    
+  </extension>
+</addon>
+
+<addon id="skin.watiporn" version="1.0.0" name="watiporn" provider-name="watiporn">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1280" height="960" aspect="4:3" folder="xml"/>
+		<res width="1706" height="960" aspect="16:9" default="true" folder="xml"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="fr_FR">Habillage pour les appareils à écran tactile</summary>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+		<forum>http://forum.kodi.tv/forumdisplay.php?fid=261</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/xbmc/xbmc/</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshot-10.jpg</screenshot>
+			<screenshot>resources/screenshot-11.jpg</screenshot>
+			<screenshot>resources/screenshot-12.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+</addons>
