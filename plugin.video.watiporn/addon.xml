@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.watiporn" name="watiporn" version="1.0.0" provider-name="christ">
+
+	<requires>
+ <import addon="xbmc.python" version="2.24.0"/>
+	<import addon="script.common.plugin.cache" version="0.9.1"/>
+	<import addon="script.module.parsedom" version="0.9.1"/>
+
+	<import addon="script.module.urlresolver" optional="true"/>
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="startup.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>fr</language>
+    <summary lang="fr">Watiporn</summary>
+    <description lang="fr">Véritable tube porno maison. Regarder des tonnes de vidéos soumises par les utilisateurs et des photos mettant en vedette les plus belles fucking amateur et sucer autour. Si vous voulez regarder MILF aller à elle, une paire d'adolescents amateurs du collège se rendre à l'entreprise ou des filles asiatiques solo jouant avec eux-mêmes. Partagez et regardez la pornographie à la maison, beaucoup d'amusement :)</description>
+    <source>http://api.watiporn.com/xmbc/api/plugin.video.watiporn/</source>
+    <website>http://www.watiporn.com</website>
+
+	</extension>
+</addon>
